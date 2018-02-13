@@ -10,6 +10,7 @@
 - JWT-Authentication
 - Socket.IO
 - Webpack
+- HMR (hot module  replacement)
 
 *create-react-app is used to create the client app*
 
