@@ -1,0 +1,5 @@
+{
+    "eslint.enable": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false
+}

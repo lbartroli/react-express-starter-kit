@@ -1,0 +1,23 @@
+.top-menu-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; }
+  .top-menu-component > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0; }
+    .top-menu-component > ul > li > a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: #5a5a5a;
+      font-weight: bold;
+      transition: all .2s ease-in-out; }
+      .top-menu-component > ul > li > a:hover {
+        color: orange; }
+  .top-menu-component .user-info-wrapper a {
+    cursor: pointer;
+    color: blue; }
+    .top-menu-component .user-info-wrapper a:hover {
+      color: orange; }

@@ -1,0 +1,33 @@
+.top-menu-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    > ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        > li {
+            > a {
+                text-decoration: none;
+                padding: 5px 10px;
+                color: rgb(90, 90, 90);
+                font-weight: bold;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: orange;
+                }
+            }
+        }
+    }
+    .user-info-wrapper {
+        a {
+            cursor: pointer;
+            color: blue;
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "extends": "react-app",
+    "rules": {
+        "no-extra-semi": "error"
+    }
+}

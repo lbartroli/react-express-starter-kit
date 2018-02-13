@@ -1,0 +1,22 @@
+.home-page {
+  text-align: center; }
+  .home-page header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white; }
+    .home-page header img {
+      animation: app-logo-spin infinite 20s linear;
+      height: 80px; }
+    .home-page header h1 {
+      font-size: 1.5em; }
+  .home-page p {
+    font-size: large; }
+  .home-page ul li {
+    text-align: left; }
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
