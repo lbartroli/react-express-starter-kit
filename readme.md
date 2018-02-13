@@ -2,6 +2,7 @@
 
 ## client/server boilerplate using the following technologies:
 
+- ES2015 (Server/Client)
 - ReactJS
 - React-router-V4
 - ExpressJS
