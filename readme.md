@@ -1,46 +1,48 @@
 # ReactJS/ExpressJS starter kit
 
-## client/server boilerplate using the following technologies:
+Client/Server boilerplate using the following technologies:
+-----------------------------------------------------------
 
-- ES2015 (Server/Client)
-- ReactJS
-- React-router-V4
-- ExpressJS
-- Mongoose
-- JWT-Authentication
-- Socket.IO
-- Webpack
-- HMR (hot module  replacement)
+- [ES2015 with Babel (Server/Client)](https://babeljs.io/learn-es2015/)
+- [ReactJS](https://reactjs.org/)
+- [React-router-V4](https://reacttraining.com/react-router/)
+- [ExpressJS](http://expressjs.com/es/)
+- [Mongoose](http://mongoosejs.com/)
+- [JWT-Authentication](https://jwt.io/)
+- [Socket.IO](https://socket.io/)
+- [Webpack](https://webpack.js.org/) -> *Internally with HMR*
 
-*create-react-app is used to create the client app*
+##### create-react-app has been used to create the client app
 
-___
 
-## setup
+Setup
+-----
 
-*Clone the repo and run:*
+#### Clone the repo and run:
 
-**<code>$ npm i</code>**
+### `npm i`
 
-*To serve the app run:*
+#### To serve the app in dev mode run:
 
-**<code>$ npm start</code>** -> It will run both, server and client app
+### `npm start` -> It will run both, server and client app
 
-*To deploy the app in production mode run:*
+*It will run the client app on `http://localhost:3000` (with HMR) and the server on `http://localhost:3001`*
 
-**<code>$ npm run deploy</code>**
+#### To deploy the app in production mode run:
 
-***Login***
+### `npm run deploy`
 
-*To Login in the app for the first time, User: admin Password: admin, then you can create you user in a DB hosted in mlab under the Users tab*
+### Login
 
-___
+To Login in the app for the first time, User: admin Password: admin, then you can create you user in a DB hosted in mlab under the Users tab
 
-### Debugging with VSCode
 
-*Also if you're using VSCode, you can debbug both, Server and Client app in development*
+Debugging with VSCode
+---------------------
 
-- First press F5 to start VSCode debugger on the Server, you can add breackpoints on the server code.
+Also if you're using **VSCode**, you can debbug both, Server and Client app in development
+
+- First press F5 to start VSCode debugger on the Server, you can add breakpoints on the server code.
 - Then open the ./client folder in a new instance of VSCode.
-- Run <code>$ npm start</code> and then press F5, it will run the debugger for the client app on VSCode and open an instance of the browser.
+- Run `npm start` and then press F5, it will run the debugger for the client app on VSCode and open an instance of the browser.
 - Now you´re ready to debug your app.
