@@ -1,4 +1,4 @@
-# ReactJS/ExpressJS starter kit
+# React with Express server starter kit
 
 Client/Server boilerplate using the following technologies:
 -----------------------------------------------------------
@@ -12,7 +12,11 @@ Client/Server boilerplate using the following technologies:
 - [Socket.IO](https://socket.io/)
 - [Webpack](https://webpack.js.org/) -> *Internally with HMR*
 
-##### create-react-app has been used to create the client app
+*create-react-app has been used to create the client app*
+
+*client files are located under **./client** folder*
+
+*server files are located under **./server** folder*
 
 
 Setup
@@ -24,13 +28,15 @@ Setup
 
 #### To serve the app in dev mode run:
 
-### `npm start` -> It will run both, server and client app
+### `npm start`
 
-*It will run the client app on `http://localhost:3000` (with HMR) and the server on `http://localhost:3001`*
+*It will run the client app on [http://localhost:3000](http://localhost:3000) (with HMR) and the server on [http://localhost:3001](http://localhost:3001)*
 
 #### To deploy the app in production mode run:
 
 ### `npm run deploy`
+
+*It will run the production app in [http://localhost:3001](http://localhost:3001)*
 
 ### Login
 
@@ -40,9 +46,9 @@ To Login in the app for the first time, User: admin Password: admin, then you ca
 Debugging with VSCode
 ---------------------
 
-Also if you're using **VSCode**, you can debbug both, Server and Client app in development
+Also if you're using **VSCode**, you can debug both, Server and Client app in development
 
-- First press F5 to start VSCode debugger on the Server, you can add breakpoints on the server code.
+- First press F5 to start VSCode debugger on the Server, you can add breakpoints on VSCode.
 - Then open the ./client folder in a new instance of VSCode.
-- Run `npm start` and then press F5, it will run the debugger for the client app on VSCode and open an instance of the browser.
+- Run `npm start` here and then press F5, it will run the debugger for the client app on VSCode and open an instance of the browser.
 - Now you´re ready to debug your app.
