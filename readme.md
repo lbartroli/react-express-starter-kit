@@ -40,7 +40,12 @@ Setup
 
 ### Login
 
-To Login in the app for the first time, User: admin Password: admin, then you can create you user in a DB hosted in mlab under the Users tab
+To Login in the app for the first time use the following credentials:
+
+- User: **admin** 
+- Password: **admin**
+
+then you can create you user under the Users tab in a DB hosted in mlab
 
 
 Debugging with VSCode
