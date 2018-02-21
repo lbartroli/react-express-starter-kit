@@ -9,15 +9,24 @@
     list-style: none;
     padding: 0; }
     .top-menu-component > ul > li > a {
+      width: 60px;
+      display: inline-block;
+      text-align: center;
       text-decoration: none;
-      padding: 5px 10px;
+      padding: 5px;
       color: #5a5a5a;
       font-weight: bold;
-      transition: all .2s ease-in-out; }
+      transition: color .2s ease-in-out, border .2s ease-in-out; }
+      .top-menu-component > ul > li > a.active {
+        border-bottom: 2px solid orange;
+        padding-bottom: 3px; }
       .top-menu-component > ul > li > a:hover {
         color: orange; }
+  .top-menu-component .user-info-wrapper span strong {
+    color: orange; }
   .top-menu-component .user-info-wrapper a {
     cursor: pointer;
-    color: blue; }
+    color: blue;
+    font-weight: 600; }
     .top-menu-component .user-info-wrapper a:hover {
-      color: orange; }
+      color: red; }

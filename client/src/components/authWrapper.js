@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 import AuthService from '../services/authService';
 
 export default function AuthWrapper(AuthComponent) {
-    const Auth = new AuthService();
     return class AuthWrapped extends Component {
         constructor() {
             super();
+            this.auth = new AuthService();
             this.state = {
                 user: null
             }
         }
 
         componentWillMount() {
-            if (!Auth.isLoggedIn()) {
+            if (!this.auth.isLoggedIn()) {
                 this.props.history.replace('/login')
             }
             else {
                 try {
-                    const profile = Auth.getProfile()
+                    const profile = this.auth.getProfile()
                     this.setState({
                         user: profile
                     })
                 }
                 catch(err){
-                    Auth.logout()
+                    this.auth.logout()
                     this.props.history.replace('/login')
                 }
             }

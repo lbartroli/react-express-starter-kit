@@ -37,14 +37,17 @@ class Login extends Component {
                 <form onSubmit={this.handleLogin}>
                     <Input 
                         id="username"
+                        label="Username:"
                         name="username"
                         placeholder='Username'
                         type="text"
+                        autofocus={true}
                         classes={['sarasa1', 'sarasa2']}
                         value={this.state.username}
                         action={this.handleChange} />
                     <Input 
                         id="password"
+                        label="Password:"
                         name="password"
                         placeholder="Password"
                         type="password"

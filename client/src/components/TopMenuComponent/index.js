@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./TopMenu.css";
 import AuthService from '../../services/authService';
 import AuthWrapper from '../authWrapper';
@@ -29,20 +29,20 @@ class TopMenuComponent extends Component {
             <div className="top-menu-component">
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                        <li>
-                        <Link to="/users">Users</Link>
+                        <NavLink exact={true} to="/">Home</NavLink>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <NavLink to="/users">Users</NavLink>
                     </li>
                     <li>
-                        <Link to="/topics">Topics</Link>
+                        <NavLink to="/about">About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/topics">Topics</NavLink>
                     </li>
                 </ul>
                 <div className="user-info-wrapper">
-                    <span>You are logged in as {this.state.profile ? this.state.profile.username : 'Anonimus'} </span>
+                    <span>You are logged in as <strong>{this.state.profile ? this.state.profile.username : 'Anonimus'}</strong> | </span>
                     <a onClick={this.handleLogout.bind(this)}>Logout</a>
                 </div>
             </div>

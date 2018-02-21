@@ -10,11 +10,18 @@
         padding: 0;
         > li {
             > a {
+                width: 60px;
+                display: inline-block;
+                text-align: center;
                 text-decoration: none;
-                padding: 5px 10px;
+                padding: 5px;
                 color: rgb(90, 90, 90);
                 font-weight: bold;
-                transition: all .2s ease-in-out;
+                transition: color .2s ease-in-out, border .2s ease-in-out;
+                &.active {
+                    border-bottom: 2px solid orange;
+                    padding-bottom: 3px;
+                }
                 &:hover {
                     color: orange;
                 }
@@ -22,11 +29,17 @@
         }
     }
     .user-info-wrapper {
+        span {
+            strong {
+                color: orange;
+            }
+        }
         a {
             cursor: pointer;
             color: blue;
+            font-weight: 600;
             &:hover {
-                color: orange;
+                color: red;
             }
         }
     }
